@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Book {
+  id            String @id @default(uuid())
+  title         String
+  author        String
+  publishedYear Int
+  genres        Json
+  stock         Int
+}

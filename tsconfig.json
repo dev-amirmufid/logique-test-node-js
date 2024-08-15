@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Menentukan target ECMAScript yang akan dikompilasi.
+    "module": "CommonJS", // Menentukan sistem modul yang akan digunakan (Node.js menggunakan CommonJS).
+    "rootDir": "./src", // Menentukan direktori root untuk file sumber.
+    "outDir": "./dist", // Menentukan direktori output untuk file hasil kompilasi.
+    "strict": true, // Mengaktifkan pemeriksaan ketat TypeScript.
+    "moduleResolution": "node", // Menentukan resolusi modul.
+    "esModuleInterop": true, // Mengizinkan impor default dari modul CommonJS.
+    "skipLibCheck": true, // Melewati pemeriksaan tipe untuk file deklarasi (dapat mempercepat kompilasi).
+    "forceConsistentCasingInFileNames": true, // Mencegah perbedaan huruf besar/kecil dalam nama file impor.
+    "noImplicitAny": true, // Mengaktifkan kesalahan untuk tipe `any` yang tidak jelas.
+    "resolveJsonModule": true, // Mengizinkan impor file JSON.
+    "sourceMap": true // Menghasilkan file sourcemap untuk debugging.
+  },
+  "include": ["src/**/*.ts"], // Menentukan file yang akan dikompilasi.
+  "exclude": ["node_modules", "dist"] // Menentukan file atau direktori yang akan dikecualikan dari kompilasi.
+}
