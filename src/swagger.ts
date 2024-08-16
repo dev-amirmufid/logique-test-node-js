@@ -6,10 +6,16 @@ const swaggerOptions = {
   swaggerDefinition: {
     openapi: '3.0.0',
     info: {
-      title: 'Library API',
+      title: 'Book API',
       version: '1.0.0',
       description: 'Library management API',
     },
+    servers: [
+      {
+        url: '/api',
+        description: 'API server',
+      },
+    ],
   },
   apis: ['./src/routes/*.ts'],
 };
