@@ -47,6 +47,7 @@ describe('Book API Endpoints', () => {
 
       const res = await request(app).get('/api/books');
 
+      console.log(res.body);
       expect(res.statusCode).toBe(200);
       expect(res.body).toEqual(books);
       expect(prisma.book.findMany).toHaveBeenCalled();

@@ -11,10 +11,7 @@
     "forceConsistentCasingInFileNames": true, // Mencegah perbedaan huruf besar/kecil dalam nama file impor.
     "noImplicitAny": true, // Mengaktifkan kesalahan untuk tipe `any` yang tidak jelas.
     "resolveJsonModule": true, // Mengizinkan impor file JSON.
-    "sourceMap": true, // Menghasilkan file sourcemap untuk debugging.
-    "paths": {
-      "@prisma-client": ["./prisma/client"]
-    }
+    "sourceMap": true // Menghasilkan file sourcemap untuk debugging.
   },
   "include": ["src/**/*.ts", "prisma/**/*.ts"], // Menentukan file yang akan dikompilasi.
   "exclude": ["node_modules", "dist"] // Menentukan file atau direktori yang akan dikecualikan dari kompilasi.

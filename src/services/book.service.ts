@@ -1,4 +1,4 @@
-import { Prisma, PrismaClient } from '@prisma/client';
+import { Prisma, PrismaClient } from '../prisma-client';
 import { NotFoundError } from '../middlewares/exceptions';
 import { v4 as uuid } from 'uuid';
 
