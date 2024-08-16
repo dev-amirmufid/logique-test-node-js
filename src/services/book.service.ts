@@ -38,6 +38,15 @@ class BookService {
               contains: query?.search,
             },
           },
+          {
+            genres: {
+              some: {
+                name: {
+                  contains: query?.search,
+                },
+              },
+            },
+          },
         ],
       });
     }
