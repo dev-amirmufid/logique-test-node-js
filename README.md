@@ -42,7 +42,7 @@ tests/
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/your-username/library-book-management.git](https://github.com/dev-amirmufid/logique-test-node-js.git)
+git clone https://github.com/dev-amirmufid/logique-test-node-js.git
 cd logique-test-node
 ```
 
