@@ -143,16 +143,6 @@ class BookService {
     const book = await prisma.book.findUnique({
       select: {
         id: true,
-        title: true,
-        author: true,
-        publishedYear: true,
-        stock: true,
-        genres: {
-          select: {
-            id: true,
-            name: true,
-          },
-        },
       },
       where: {
         id,
